@@ -1,3 +1,6 @@
+body{
+    background-color: aliceblue;
+}
 
 table {
     width: 50%;
@@ -13,7 +16,17 @@ p{
     letter-spacing: 3px;
     text-decoration: solid;
 }
-.Tabla{
+.hola{
     border: 3px blue solid;
-    margin: 15px;
+    width: 200px;
+    height: 18px;
+}
+button{
+    border-radius: 4px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+
+}
+span{
+    color: brown;
 }
