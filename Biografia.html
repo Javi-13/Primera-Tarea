@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>MI BIOGRAFIA</h1>
+    <h1 style="letter-spacing: 1px;">HOJA DE VIDA</h1>
     <h3>LENIN XAVIER MORENO TERAN</h3>
     <H2>Formacion</H2>
     <p>Estudio en la Universidad Catolica del Ecuador-Sede Ibarra, actualmente estoy cursando el tercer semestre en la Tecnologia en Desarrollo de Software, me gradue de bachiller en ciencias en el colegio municipal Alfredo Perez Guerrero</p>
@@ -34,18 +34,26 @@
     <ul>
         <li>Jugar Videojuegos</li>
     </ul>
- 
-    <h1>Imagen relevante</h1>
-    <img src="perrito.jpeg" alt="Mi perrito" style="border: 8px solid whitesmoke;">
-    <table class="Tabla">
-        <tr>
-            <th class="Tabla">Fecha de nacimiento: </th>
-            <th class="Tabla">Cedula: </th>
-        </tr>
-        <tr>
-            <td class="Tabla">20/02/2002</td>
-            <td class="Tabla">1754417697</td>
+    <table class="hola">
+        <tr class="hola">
+            <td class="hola">
+                <input class="hola" type="date" id="idFecha">Fecha de nacimiento
+                <br>
+                <input class="hola" type="text" id="idNacionalidad">Cedula de identidad
+                <br>
+                <button onclick="calcularEdad()">Calcular</button>
+            </td>
         </tr>
     </table>
+    <p>Esta es tu edad en años: <span id="idSpanEdad"></span></p>
+    <p>Esta es tu edad en meses: <span id="idSpanMeses"></span></p>
+    <p>Esta es tu edad en dias: <span id="idSpanDias"></span></p>
+    <p>Tu nacionalidad: <span id="idCedula"></span></p>
+
+    <script src="funcion.js"></script>
+
+
+    <h1>Imagen relevante</h1>
+    <img src="perrito.jpeg" alt="Mi perrito" style="border: 8px solid whitesmoke;">
 </body>
 </html>
