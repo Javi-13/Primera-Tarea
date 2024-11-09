@@ -6,7 +6,13 @@ function calcularEdad(){
     var fechaactual = new Date();
     var dif_anios = fechaactual.getFullYear() - edadfecha.getFullYear()
     var dif_meses = fechaactual.getMonth()- edadfecha.getMonth()
-    var dif_dias = Math.floor((fechaactual.getTime() - edadfecha.getTime()) / (1000 * 60 * 60 * 24));
+    var dif_dias;
+    if (fechaactual.getDate() >= edadfecha.getDate()) {
+        dif_dias = fechaactual.getDate() - edadfecha.getDate();
+    } else {
+        let ultimoMes = new Date(fechaactual.getFullYear(), fechaactual.getMonth() - 1, 0); 
+        dif_dias = ultimoMes.getDate() - edadfecha.getDate() + fechaactual.getDate(); 
+    }
 
     document.getElementById("idSpanEdad").textContent = dif_anios;
     document.getElementById("idSpanMeses").textContent = dif_meses;
